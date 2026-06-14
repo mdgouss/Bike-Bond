@@ -1,0 +1,18 @@
+{
+  "name": "bikebond",
+  "version": "1.0.0",
+  "description": "BikeBond - India's Premier Biking Community Platform",
+  "scripts": {
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install",
+    "build": "cd client && npm run build"
+  },
+  "keywords": ["biking", "motorcycle", "community", "india"],
+  "author": "BikeBond Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
